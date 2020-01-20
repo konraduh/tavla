@@ -60,13 +60,6 @@ function DashboardWrapper(props: Props): JSX.Element {
 
     return (
         <div className={`dashboard-wrapper ${className}`}>
-            <div className="dashboard-wrapper__top">
-                <div className="dashboard-wrapper__logo-wrapper">
-                    <TavlaLogo className="dashboard-wrapper__logo" />
-                    <SubParagraph>Finn din rute på entur.no eller i Entur-appen.</SubParagraph>
-                </div>
-                <Clock className="dashboard-wrapper__clock" />
-            </div>
             { renderContents() }
             <Contrast>
                 <Footer
